@@ -95,8 +95,8 @@ function yearIsDisabled (minDate, maxDate, year) {
 }
 
 function timeComponentIsDisabled (min, max, component) {
-  return (min && component < min) ||
-         (max && component > max)
+  return (min != null && component < min) ||
+         (max != null && component > max)
 }
 
 function weekdays (weekStart) {
